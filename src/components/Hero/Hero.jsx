@@ -4,8 +4,10 @@ import themeIcon from "../../assets/sun.svg";
 import githubIcon from "../../assets/github-light.svg";
 import linkedInIcon from "../../assets/linkedin-light.svg";
 import resume from "../../assets/Childs_Resume_Grad_23.pdf";
+import { useTheme } from "../../theme/ThemeContext.jsx";
 
 function Hero() {
+  const { theme, toggleTheme } = useTheme();
   return (
     <section id="hero" className={styles.container}>
       <div className={styles.colorModeContainer}>
